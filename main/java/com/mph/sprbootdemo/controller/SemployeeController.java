@@ -20,6 +20,8 @@ import com.mph.sprbootdemo.service.SemployeeService;
 
 @RestController
 @RequestMapping("/sprbootdemo/semployee")
+	@CrossOrigin(allowCredentials = "false" , allowedHeaders = "*" , origins = "*" ,
+methods = {RequestMethod.GET,RequestMethod.POST,RequestMethod.PUT,RequestMethod.DELETE})
 public class SemployeeController {
 	@Autowired
 	private SemployeeService semployeeService;
